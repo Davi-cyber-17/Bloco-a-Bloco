@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#05060f">
+<title>Bloco a Bloco</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <header>
+    <div class="box"><span>Pontos</span><strong id="score">0</strong></div>
+    <h1>Bloco a<em>Bloco</em></h1>
+    <div class="box"><span>Recorde</span><strong id="best">0</strong></div>
+  </header>
+
+  <div id="board-wrap">
+    <div id="board"></div>
+    <div id="pop"></div>
+  </div>
+
+  <div id="tray">
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+  </div>
+
+  <button id="restart">Novo jogo</button>
+
+  <div id="over" class="hidden">
+    <div class="card">
+      <h2>FIM DE JOGO</h2>
+      <p>Pontuação: <b id="final">0</b></p>
+      <p id="newbest" class="hidden">★ NOVO RECORDE ★</p>
+      <button id="again">Jogar de novo</button>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
